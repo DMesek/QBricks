@@ -1,12 +1,8 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
-
-part '{{entity.snakeCase()}}_response.g.dart';
+import 'package:equatable/equatable.dart';
 
 @JsonSerializable()
-class {{entity.pascalCase()}}Response {
-  const {{entity.pascalCase()}}Response({
+class {{entity.pascalCase()}} extends Equatable {
+  const {{entity.pascalCase()}}({
   });
 
-  factory {{entity.pascalCase()}}Response.fromJson(Map<String, dynamic> json) =>
-      _${{entity.pascalCase()}}ResponseFromJson(json);
 }
