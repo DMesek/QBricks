@@ -1,6 +1,6 @@
 name: riverpod_module
 description: A brick to produce boilerplate code for new feature using riverpod
-version: 1.0.0
+version: 1.0.0+1
 repository: https://github.com/GJJ2019/mason_bricks/tree/main/bricks/riverpod_module
 
 environment:
@@ -12,3 +12,9 @@ vars:
     description: Name of your module
     default: main
     prompt: What is your module name?
+
+  entity:
+    type: string
+    description: Name of your domain entity
+    default: main
+    prompt: What is your entity name?
