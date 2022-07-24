@@ -10,11 +10,11 @@ vars:
   name:
     type: string
     description: Name of your module
-    default: main
+    default: login
     prompt: What is your module name?
 
   entity:
     type: string
     description: Name of your domain entity
-    default: main
+    default: user
     prompt: What is your entity name?
