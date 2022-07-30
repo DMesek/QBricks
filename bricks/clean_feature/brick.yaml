@@ -18,8 +18,15 @@ vars:
     description: Name of your domain entity
     default: user
     prompt: What is your entity name?
+
   use_beamer:
     type: boolean
     description: Does this project use beamer
     default: true
     prompt: Does this project use beamer?
+
+  with_tests:
+    type: boolean
+    description: Creates mirroring test directory with test files
+    default: true
+    prompt: Create test files?

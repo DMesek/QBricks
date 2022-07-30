@@ -10,6 +10,7 @@ Installed version of [hooks_riverpod](https://pub.dev/packages/hooks_riverpod)
 Installed version of [freezed](https://pub.dev/packages/freezed)
 Installed version of [json_serializable](https://pub.dev/packages/json_serializable)
 Installed version of [equatable](https://pub.dev/packages/equatable)
+(optional) Installed version of [beamer](https://pub.dev/packages/beamer)
 
 
 ## Usage 🚀
