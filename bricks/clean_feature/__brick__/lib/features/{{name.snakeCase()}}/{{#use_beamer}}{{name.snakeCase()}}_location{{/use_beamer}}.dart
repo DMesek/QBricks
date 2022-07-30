@@ -1,4 +1,7 @@
 import 'package:beamer/beamer.dart';
+import 'package:flutter/material.dart';
+
+import 'presentation/pages/{{name.camelCase()}}_page.dart';
 
 class {{name.pascalCase()}}Location extends BeamLocation<BeamState> {
 
