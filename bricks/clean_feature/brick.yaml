@@ -18,3 +18,8 @@ vars:
     description: Name of your domain entity
     default: user
     prompt: What is your entity name?
+  useBeamer:
+    type: boolean
+    description: Does this project use beamer
+    default: true
+    prompt: Does this project use beamer?
