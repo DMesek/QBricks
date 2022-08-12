@@ -1,1 +1,1 @@
-//TODO: export all widgets from widgets folder into here
+export '{{name.snakeCase()}}_body.dart';

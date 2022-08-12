@@ -7,10 +7,11 @@ class {{name.pascalCase()}}Page extends ConsumerWidget {
   const {{name.pascalCase()}}Page({Key? key}) : super(key: key);
 
   @override
+  @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final state = ref.watch({{name.camelCase()}}NotifierProvider);
+     final state = ref.watch({{name.camelCase()}}NotifierProvider);
     return state.when(
-      data: ({{entity.camelCase()}}) => Container(),
+      data: ({{entity.camelCase()}}) => {{name.pascalCase()}}Body(),
       loading: () => Container(),
       error: () => Container(),
     );
