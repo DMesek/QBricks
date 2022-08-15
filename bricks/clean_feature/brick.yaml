@@ -13,12 +13,6 @@ vars:
     default: login
     prompt: What is your module name?
 
-  entity:
-    type: string
-    description: Name of your domain entity
-    default: user
-    prompt: What is your entity name?
-
   use_beamer:
     type: boolean
     description: Does this project use beamer
