@@ -1,7 +1,7 @@
 name: entity
 description: A brick to create your model with properties and all the supporting methods, copyWith, to/from json, equatable and more!
 version: 0.0.1
-repository: https://github.com/LukeMoody01/mason_bricks/tree/main/bricks/model
+repository: https://github.com/DMesek/QBricks/tree/main/bricks/entity
 
 vars:
   model_name:

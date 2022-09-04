@@ -1,11 +1,11 @@
-# Model
+# Entity
 
 A brick to create your entity for a desired feature with properties, copyWith and equatable.
 This brick supports custom types and custom lists!
 
 ## Prerequisites
 
-Installed version of [equatable](https://pub.dev/packages/equatable)
+Installed version of [Equatable](https://pub.dev/packages/equatable)
 
 ## How to use 🚀
 
