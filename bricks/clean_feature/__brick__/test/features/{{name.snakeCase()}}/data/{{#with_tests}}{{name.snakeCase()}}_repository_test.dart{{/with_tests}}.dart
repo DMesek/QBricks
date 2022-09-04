@@ -5,19 +5,16 @@ class Mock{{dependencyName.pascalCase()}} extends Mock implements {{dependencyNa
 
 
 void main() {
-  {{#dependencies}}late Mock{{dependencyName.pascalCase()}} {{dependencyName.camelCase()}};
+  {{#dependencies}}late {{dependencyName.pascalCase()}} {{dependencyName.camelCase()}};
   {{/dependencies}}
-  late {{name.pascalCase()}} {{name.camelCase()}};
+  late {{name.pascalCase()}}Repository {{name.camelCase()}}Repository;
   setUp(() {
-    {{#dependencies}}{{dependencyName.camelCase()}} = Mock{{name.pascalCase()}}();
+    {{#dependencies}}{{dependencyName.camelCase()}} = Mock{{dependencyName.pascalCase()}}();
     {{/dependencies}}
-    {{name.camelCase()}} = {{name.pascalCase()}}({{#dependencies}}{{dependencyName.camelCase()}},{{/dependencies}});
+    {{name.camelCase()}}Repository = {{name.pascalCase()}}Repository({{#dependencies}}{{dependencyName.camelCase()}},{{/dependencies}});
   });
 
-    group('{{name.pascalCase()}}', () {
-    test('can be instantiated', () {
-      expect(const {{name.pascalCase()}}({{#dependencies}}{{dependencyName.camelCase()}},{{/dependencies}}), isNotNull);
-    });
+    
     {{#methods}}
     group('{{methodName}}', () {
       test('executes success flow', () async {
@@ -31,6 +28,5 @@ void main() {
       });
     });
     {{/methods}}
-  });
 
 }
