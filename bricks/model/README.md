@@ -29,70 +29,52 @@ mason make model --model_name userResponse --feature_name login
 ```dart
 import 'package:equatable/equatable.dart';
 
-part 'user.g.dart';
+part 'user_response.g.dart';
 
-/// {@template user}
-/// User description
-/// {@endtemplate}
-class User extends Equatable {
-  /// {@macro user}
-  const User({
+class UserResponse extends Equatable {
+  const UserResponse({ 
     required this.name,
-    required this.familyMembers,
-    required this.family,
+    required this.age,
   });
 
-  /// Creates a User from Json map
-  factory User.fromJson(Map<String, dynamic> data) => _$UserFromJson(data);
+  factory UserResponse.fromJson(Map<String, dynamic> data) => _$UserResponseFromJson(data);
 
-  /// A description for name
+
   final String name;
 
-  /// A description for familyMembers
-  final List<User> familyMembers;
+  final int age;
 
-  /// A description for family
-  final Family family;
-
-  /// Creates a copy of the current User with property changes
-  User copyWith({
+  UserResponse copyWith({ 
     String? name,
-    List<User>? familyMembers,
-    Family? family,
+    int? age,
   }) {
-    return User(
+    return UserResponse(
       name: name ?? this.name,
-      familyMembers: familyMembers ?? this.familyMembers,
-      family: family ?? this.family,
+      age: age ?? this.age,
     );
   }
 
   @override
   List<Object?> get props => [
         name,
-        familyMembers,
-        family,
+        age,
       ];
 
-  /// Creates a Json map from a User
-  Map<String, dynamic> toJson() => _$UserToJson(this);
+  Map<String, dynamic> toJson() => _$UserResponseToJso(this);
 }
 
-//user.g.dart
-part of 'user.dart';
 
-User _$UserFromJson(Map<String, dynamic> json) => User(
+//user.g.dart
+part of 'user_response.dart';
+
+UserResponse _$UserResponseFromJson(Map<String, dynamic> json) => UserResponse(
       name: json['name'] as String,
-      familyMembers: (json['familyMembers'] as List<dynamic>)
-          .map((e) => User.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      family: Family.fromJson(json['family'] as Map<String, dynamic>),
+      age: json['age'] as int,
     );
 
-Map<String, dynamic> _$UserToJson(User instance) => <String, dynamic>{
+Map<String, dynamic> _$UserResponseToJson(UserResponse instance) => <String, dynamic>{ 
       'name': instance.name,
-      'familyMembers': instance.familyMembers,
-      'family': instance.family,
+      'age': instance.age,
     };
 
 ```
