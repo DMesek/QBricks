@@ -27,7 +27,8 @@ mason make entity --model_name user --feature_name login
 ├── features
       ├── login
           ├── domain
-                ├── user.dart
+                ├── entities
+                      ├── user.dart
 ```
 
 ```dart

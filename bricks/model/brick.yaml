@@ -1,0 +1,17 @@
+name: model
+description: A brick to create your model with properties and all the supporting methods, copyWith, to/from json, equatable and more!
+version: 0.0.1
+repository: https://github.com/LukeMoody01/mason_bricks/tree/main/bricks/model
+
+vars:
+  model_name:
+    default: userResponse
+    type: string
+    description: The model name
+    prompt: What is the model's name?
+
+  feature_name:
+    default: login
+    type: string
+    description: The feature name
+    prompt: What is the feature name?

@@ -3,3 +3,5 @@ bricks:
     path: bricks/clean_feature
   entity:
     path: bricks/entity
+  model:
+    path: bricks/model
