@@ -1,0 +1,26 @@
+name: clean_feature
+description: A brick to produce boilerplate code for new feature using riverpod
+version: 1.0.0+1
+repository: https://github.com/DMesek/QBricks/tree/main/bricks/clean_feature
+
+environment:
+  mason: ">=0.1.0-dev.26 <0.1.0"
+
+vars:
+  name:
+    type: string
+    description: Name of your module
+    default: login
+    prompt: What is your module name?
+
+  use_beamer:
+    type: boolean
+    description: Does this project use beamer
+    default: true
+    prompt: Does this project use beamer?
+
+  with_tests:
+    type: boolean
+    description: Creates mirroring test directory with test files
+    default: true
+    prompt: Create test files?
