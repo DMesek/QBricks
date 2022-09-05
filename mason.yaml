@@ -5,3 +5,5 @@ bricks:
     path: bricks/entity
   model:
     path: bricks/model
+  repository:
+    path: bricks/repository

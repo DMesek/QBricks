@@ -5,7 +5,6 @@ class {{model_name.pascalCase()}} extends Equatable {
     required this.{{name}},{{/properties}}
   }{{/hasProperties}});
 {{#properties}}
-
   final {{#hasSpecial}}{{{type}}}{{/hasSpecial}}{{^hasSpecial}}{{type}}{{/hasSpecial}} {{name}};{{/properties}}
   
   {{model_name.pascalCase()}} copyWith({{#hasProperties}}{ {{#properties}}

@@ -7,11 +7,11 @@ class Mock{{dependencyName.pascalCase()}} extends Mock implements {{dependencyNa
 void main() {
   {{#dependencies}}late {{dependencyName.pascalCase()}} {{dependencyName.camelCase()}};
   {{/dependencies}}
-  late {{name.pascalCase()}}Repository {{name.camelCase()}}Repository;
+  late {{name.pascalCase()}} {{name.camelCase()}};
   setUp(() {
     {{#dependencies}}{{dependencyName.camelCase()}} = Mock{{dependencyName.pascalCase()}}();
     {{/dependencies}}
-    {{name.camelCase()}}Repository = {{name.pascalCase()}}Repository({{#dependencies}}{{dependencyName.camelCase()}},{{/dependencies}});
+    {{name.camelCase()}} = {{name.pascalCase()}}Impl({{#dependencies}}{{dependencyName.camelCase()}},{{/dependencies}});
   });
 
     
