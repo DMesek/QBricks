@@ -1,5 +1,7 @@
 # Model
 
+[![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
+
 A brick to create your model for a desired feature with properties, copyWith, to/from json and equatable.
 
 ## How to use 🚀

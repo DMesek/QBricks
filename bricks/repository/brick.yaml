@@ -10,7 +10,7 @@ vars:
   name:
     type: string
     description: Name of your repository
-    default: userRepository
+    default: loginRepository
     prompt: What is your repository name?
 
   feature_name:
