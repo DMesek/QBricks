@@ -7,3 +7,5 @@ bricks:
     path: bricks/model
   repository:
     path: bricks/repository
+  notifier:
+    path: bricks/notifier

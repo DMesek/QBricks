@@ -1,1 +1,1 @@
-{"bricks":{"clean_feature":{"path":"bricks/clean_feature"},"entity":{"path":"bricks/entity"},"model":{"path":"bricks/model"},"repository":{"path":"bricks/repository"}}}
+{"bricks":{"clean_feature":{"path":"bricks/clean_feature"},"entity":{"path":"bricks/entity"},"model":{"path":"bricks/model"},"repository":{"path":"bricks/repository"},"notifier":{"path":"bricks/notifier"}}}
