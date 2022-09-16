@@ -1,2 +1,2 @@
 analyzer:
-  exclude: [bricks/**]
+  exclude: [bricks/**, lib/**]
