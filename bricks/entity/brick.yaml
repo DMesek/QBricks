@@ -4,12 +4,6 @@ version: 0.0.1
 repository: https://github.com/DMesek/QBricks/tree/main/bricks/entity
 
 vars:
-  project_name:
-    default: myapp
-    type: string
-    description: The project name
-    prompt: What is the project name?
-
   feature_name:
     default: login
     type: string

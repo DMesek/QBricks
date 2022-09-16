@@ -4,12 +4,6 @@ version: 0.0.1+1
 repository: https://github.com/LukeMoody01/mason_bricks/tree/main/bricks/model
 
 vars:
-  project_name:
-    default: myapp
-    type: string
-    description: The project name
-    prompt: What is the project name?
-
   feature_name:
     default: login
     type: string
