@@ -4,14 +4,20 @@ version: 0.0.1
 repository: https://github.com/LukeMoody01/mason_bricks/tree/main/bricks/model
 
 vars:
-  model_name:
-    default: userResponse
+  project_name:
+    default: myapp
     type: string
-    description: The model name
-    prompt: What is the model's name?
+    description: The project name
+    prompt: What is the project name?
 
   feature_name:
     default: login
     type: string
     description: The feature name
     prompt: What is the feature name?
+
+  model_name:
+    default: userResponse
+    type: string
+    description: The model name
+    prompt: What is the model's name?

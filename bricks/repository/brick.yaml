@@ -7,14 +7,20 @@ environment:
   mason: ">=0.1.0-dev.26 <0.1.0"
 
 vars:
-  name:
+  project_name:
+    default: myapp
     type: string
-    description: Name of your repository
-    default: loginRepository
-    prompt: What is your repository name?
+    description: The project name
+    prompt: What is the project name?
 
   feature_name:
     type: string
     description: Name of your feature
     default: login
     prompt: What is your feature name?
+
+  name:
+    type: string
+    description: Name of your repository
+    default: loginRepository
+    prompt: What is your repository name?

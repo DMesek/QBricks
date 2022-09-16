@@ -7,19 +7,26 @@ environment:
   mason: ">=0.1.0-dev.26 <0.1.0"
 
 vars:
-  name:
+  project_name:
+    default: myapp
     type: string
-    description: Name of your notifier
-    default: loginNotifier
-    prompt: What is your notifier name?
-  state:
-    type: string
-    description: State which notifier emits
-    default: loginState
-    prompt: Which state does the notifier emit?
+    description: The project name
+    prompt: What is the project name?
 
   feature_name:
     type: string
     description: Name of your feature
     default: login
     prompt: What is your feature name?
+
+  name:
+    type: string
+    description: Name of your notifier
+    default: loginNotifier
+    prompt: What is your notifier name?
+
+  state:
+    type: string
+    description: State which notifier emits
+    default: loginState
+    prompt: Which state does the notifier emit?

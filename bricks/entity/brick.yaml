@@ -4,14 +4,20 @@ version: 0.0.1
 repository: https://github.com/DMesek/QBricks/tree/main/bricks/entity
 
 vars:
-  model_name:
-    default: entity
+  project_name:
+    default: myapp
     type: string
-    description: The entity name
-    prompt: What is the entity name?
+    description: The project name
+    prompt: What is the project name?
 
   feature_name:
     default: login
     type: string
     description: The feature name
     prompt: What is the feature name?
+
+  model_name:
+    default: entity
+    type: string
+    description: The entity name
+    prompt: What is the entity name?
