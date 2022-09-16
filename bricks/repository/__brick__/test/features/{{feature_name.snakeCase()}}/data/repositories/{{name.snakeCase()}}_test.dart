@@ -2,6 +2,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 
 import 'package:{{project_name.snakeCase()}}/features/{{feature_name.snakeCase()}}/data/repositories/{{name.snakeCase()}}.dart';
+import 'package:{{project_name.snakeCase()}}/common/data/api_client.dart';
+
 
 
 {{#dependencies}}
@@ -17,7 +19,7 @@ void main() {
     apiClient = MockApiClient();
     {{#dependencies}}{{dependencyName.camelCase()}} = Mock{{dependencyName.pascalCase()}}();
     {{/dependencies}}
-    {{name.camelCase()}} = {{name.pascalCase()}}Impl({{#dependencies}}{{dependencyName.camelCase()}},{{/dependencies}});
+    {{name.camelCase()}} = {{name.pascalCase()}}Impl(apiClient, {{#dependencies}}{{dependencyName.camelCase()}},{{/dependencies}});
   });
 
     
