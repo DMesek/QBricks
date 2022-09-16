@@ -23,6 +23,6 @@ class {{name.pascalCase()}}Impl implements {{name.pascalCase()}}{
   {{#methods}}
   @override
   Future<{{type}}> {{methodName}} async {
-    // TODO: - Implement method
+    throw UnimplementedError();
   } {{/methods}}
 }

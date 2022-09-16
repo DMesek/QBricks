@@ -1,5 +1,11 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
+
+import 'package:{{project_name.snakeCase()}}/features/{{feature_name.snakeCase()}}/data/repositories/{{name.snakeCase()}}.dart';
+{{#methods}}
+import 'package:{{project_name.snakeCase()}}/features/{{feature_name.snakeCase()}}/domain/entities/{{type.snakeCase()}}.dart';
+{{/methods}}
+
 {{#dependencies}}
 class Mock{{dependencyName.pascalCase()}} extends Mock implements {{dependencyName.pascalCase()}} {} {{/dependencies}}
 
@@ -18,12 +24,12 @@ void main() {
     {{#methods}}
     group('{{methodName}}', () {
       test('executes success flow', () async {
-        final value = {{name.camelCase()}}.{{methodName}}();
+        final value = {{name.camelCase()}}.{{methodName}};
         //expect(value, equals(smth));
       });
 
       test('executes failure flow', () async {
-        final value = {{name.camelCase()}}.{{methodName}}();
+        final value = {{name.camelCase()}}.{{methodName}};
         //expect(value, equals(smth));
       });
     });
