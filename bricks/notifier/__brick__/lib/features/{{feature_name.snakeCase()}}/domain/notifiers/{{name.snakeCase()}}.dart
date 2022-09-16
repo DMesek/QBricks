@@ -1,6 +1,6 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 {{#dependencies}}
-import '../../data/repositories/{{dependencyName.snakeCase()}}.dart';
+import 'package:{{project_name.snakeCase()}}/features/{{feature_name.snakeCase()}}/data/repositories/{{dependencyName.snakeCase()}}.dart';
 {{/dependencies}}
 
 final {{name.camelCase()}}Provider = StateNotifierProvider<{{name.pascalCase()}}>((ref) {

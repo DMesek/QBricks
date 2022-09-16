@@ -1,6 +1,6 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 {{#methods}}
-import '../../domain/entities/{{type.snakeCase()}}.dart';
+import 'package:{{project_name.snakeCase()}}/features/{{feature_name.snakeCase()}}/domain/entities/{{type.snakeCase()}}.dart';
 {{/methods}}
 
 final {{name.camelCase()}}Provider = Provider<{{name.pascalCase()}}>((ref) {
