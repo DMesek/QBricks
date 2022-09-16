@@ -1,11 +1,13 @@
 import 'package:equatable/equatable.dart';
 
 class {{model_name.pascalCase()}} extends Equatable {
+  {{#properties}}
+  final {{#hasSpecial}}{{{type}}}{{/hasSpecial}}{{^hasSpecial}}{{type}}{{/hasSpecial}} {{name}};{{/properties}}
+
   const {{model_name.pascalCase()}}({{#hasProperties}}{ {{#properties}}
     required this.{{name}},{{/properties}}
   }{{/hasProperties}});
-{{#properties}}
-  final {{#hasSpecial}}{{{type}}}{{/hasSpecial}}{{^hasSpecial}}{{type}}{{/hasSpecial}} {{name}};{{/properties}}
+
   
   {{model_name.pascalCase()}} copyWith({{#hasProperties}}{ {{#properties}}
     {{#hasSpecial}}{{{type}}}{{/hasSpecial}}{{^hasSpecial}}{{type}}{{/hasSpecial}}? {{name}},{{/properties}}
