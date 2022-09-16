@@ -2,19 +2,19 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 
 import 'package:{{project_name.snakeCase()}}/features/{{feature_name.snakeCase()}}/data/repositories/{{name.snakeCase()}}.dart';
-{{#methods}}
-import 'package:{{project_name.snakeCase()}}/features/{{feature_name.snakeCase()}}/domain/entities/{{type.snakeCase()}}.dart';
-{{/methods}}
+
 
 {{#dependencies}}
 class Mock{{dependencyName.pascalCase()}} extends Mock implements {{dependencyName.pascalCase()}} {} {{/dependencies}}
-
+class MockApiClient extends Mock implements ApiClient {} 
 
 void main() {
+  late ApiClient apiClient;
   {{#dependencies}}late {{dependencyName.pascalCase()}} {{dependencyName.camelCase()}};
   {{/dependencies}}
   late {{name.pascalCase()}} {{name.camelCase()}};
   setUp(() {
+    apiClient = MockApiClient();
     {{#dependencies}}{{dependencyName.camelCase()}} = Mock{{dependencyName.pascalCase()}}();
     {{/dependencies}}
     {{name.camelCase()}} = {{name.pascalCase()}}Impl({{#dependencies}}{{dependencyName.camelCase()}},{{/dependencies}});
