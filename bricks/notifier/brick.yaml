@@ -1,6 +1,6 @@
 name: notifier
 description: A brick to produce boilerplate code for new notifier using riverpod
-version: 0.0.1
+version: 0.0.1+3
 repository: https://github.com/DMesek/QBricks/tree/main/bricks/notifier
 
 environment:
